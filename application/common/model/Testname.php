@@ -12,5 +12,10 @@ class Testname Extends Model
 		$data = model('Testname')->select();
 		return $data;
 	}
+	 public function User()
+    {
+    	$data=model('User')->select();
+    	return $data;
+    }
 }
 ?>

@@ -132,3 +132,36 @@
 [ 2018-05-07T14:49:22+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 91 , 'testname/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1525675762 , 1525675762) [ RunTime:0.001000s ]
 [ 2018-05-07T14:49:22+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 91 , 'testname/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1525675762 , 1525675762) [ RunTime:0.001000s ]
 [ 2018-05-07T14:49:22+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 91 , 'testname/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1525675762 , 1525675762) [ RunTime:0.001000s ]
+[ 2018-05-07T15:43:59+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-05-07T15:43:59+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-05-07T15:43:59+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002000s ]
+[ 2018-05-07T15:43:59+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-05-07T15:43:59+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=3307;dbname=fastadmin;charset=utf8
+[ 2018-05-07T15:43:59+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'user' [ RunTime:0.001000s ]
+[ 2018-05-07T15:43:59+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_user' [ RunTime:0.001000s ]
+[ 2018-05-07T15:46:10+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-05-07T15:46:10+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-05-07T15:46:10+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002000s ]
+[ 2018-05-07T15:46:10+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-05-07T15:47:19+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-05-07T15:47:19+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-05-07T15:47:19+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ 2018-05-07T15:47:19+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-05-07T15:47:19+08:00 ][ info ] [ LANG ] E:\phpStudy\WWW\fastadmin\application\admin\lang/zh-cn.php
+[ 2018-05-07T15:47:19+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3307;dbname=fastadmin;charset=utf8
+[ 2018-05-07T15:47:19+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.004000s ]
+[ 2018-05-07T15:47:19+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'user' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-05-07T15:47:19+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'user/user' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-05-07T15:47:19+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'user/user/index' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-05-07T15:47:19+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'user/user/edit' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-05-07T15:47:19+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'user/user/add' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-05-07T15:47:19+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'user/user/del' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-05-07T15:47:19+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'user/user/multi' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-05-07T15:47:19+08:00 ][ sql ] [ SQL ] UPDATE `fa_auth_rule`  SET `pid`=67,`name`='user/user/index',`icon`='fa fa-circle-o',`title`='查看',`ismenu`=0,`status`='normal',`updatetime`=1525679239  WHERE  `id` = 68 [ RunTime:0.000000s ]
+[ 2018-05-07T15:47:19+08:00 ][ sql ] [ SQL ] UPDATE `fa_auth_rule`  SET `pid`=67,`name`='user/user/edit',`icon`='fa fa-circle-o',`title`='编辑',`ismenu`=0,`status`='normal',`updatetime`=1525679239  WHERE  `id` = 69 [ RunTime:0.000000s ]
+[ 2018-05-07T15:47:19+08:00 ][ sql ] [ SQL ] UPDATE `fa_auth_rule`  SET `pid`=67,`name`='user/user/add',`icon`='fa fa-circle-o',`title`='添加',`ismenu`=0,`status`='normal',`updatetime`=1525679239  WHERE  `id` = 70 [ RunTime:0.000000s ]
+[ 2018-05-07T15:47:19+08:00 ][ sql ] [ SQL ] UPDATE `fa_auth_rule`  SET `pid`=67,`name`='user/user/del',`icon`='fa fa-circle-o',`title`='删除',`ismenu`=0,`status`='normal',`updatetime`=1525679239  WHERE  `id` = 71 [ RunTime:0.000000s ]
+[ 2018-05-07T15:47:19+08:00 ][ sql ] [ SQL ] UPDATE `fa_auth_rule`  SET `pid`=67,`name`='user/user/multi',`icon`='fa fa-circle-o',`title`='批量更新',`ismenu`=0,`status`='normal',`updatetime`=1525679239  WHERE  `id` = 72 [ RunTime:0.000000s ]

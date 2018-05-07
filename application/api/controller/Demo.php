@@ -46,11 +46,18 @@ class Demo extends Api
     {
         $this->success('返回成功', ['action' => 'test3']);
     }
-     public function test4()
+     public function index()
     {   
     	  
     	$model =new Testname();
     	$data = $model->index();
+        $this->success('返回成功', $data);
+    }
+    public function user()
+    {   
+    	  
+    	$model =new Testname();
+    	$data = $model->user();
         $this->success('返回成功', $data);
     }
 }
